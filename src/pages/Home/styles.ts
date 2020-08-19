@@ -21,7 +21,13 @@ export const Header = styled.header`
   > img {
     width: 15.0rem;
     border-radius: .7rem;
-   
+    margin-left: .5rem;
+  }
+
+  @media (max-width: 700px) {
+    > img {
+      display: none;
+    }
   }
 `;
 export const HeaderContent = styled.div`
@@ -29,8 +35,10 @@ export const HeaderContent = styled.div`
 
  > p {
     color: var(--color-text);
+    opacity: .8;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    text-align: justify;
     margin: 1.5rem 0;
     &:first-child {
       font-size: 1.6rem;

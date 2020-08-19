@@ -11,7 +11,7 @@ class ComponentToPrint extends React.Component {
 		return (
 			<Container>
 				<Link to="/" >
-					<BsArrowLeft size={30} color="888" />
+					<BsArrowLeft size={30}/>
 				</Link>
 				<h1>VALDIR DA SILVA ALVES</h1>
 				<h2>Objetivo</h2>
@@ -108,7 +108,7 @@ const Example = () => {
 	return (
 		<div>
 			<ComponentToPrint ref={componentRef} />
-			<button onClick={handlePrint}>Download</button>
+		
 		</div>
 	);
 };

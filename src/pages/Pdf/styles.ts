@@ -10,6 +10,17 @@ export const Container = styled.div`
   color: #353430;
   background: #fff;
 
+  > a {
+    position: fixed;
+    left: 5px;
+    color: #e22240;
+    opacity: .7; 
+
+    &:hover {
+      opacity: 1;
+    }   
+  }
+
   > p {
     padding: 0 20px;
     margin-bottom: 10px;    
@@ -34,6 +45,11 @@ export const Container = styled.div`
     padding: 0 20px;
     margin-bottom: 10px;    
   }
+}
+
+@media (max-width: 700px) {
+  width: 100%;
+  box-shadow: none;
 }
 `;
 
