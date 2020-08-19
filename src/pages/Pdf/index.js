@@ -4,14 +4,14 @@ import { useReactToPrint } from 'react-to-print';
 import { Link } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 
-import { Container, Experience, Courses } from './styles';
+import { Container, ContainerPdf, Experience, Courses } from './styles';
 
 class ComponentToPrint extends React.Component {
 	render() {
 		return (
 			<Container>
 				<Link to="/" >
-					<BsArrowLeft size={30}/>
+					<BsArrowLeft size={30} color="#555"/>
 				</Link>
 				<h1>VALDIR DA SILVA ALVES</h1>
 				<h2>Objetivo</h2>
@@ -106,10 +106,10 @@ const Example = () => {
 	});
 
 	return (
-		<div>
+		<ContainerPdf>
 			<ComponentToPrint ref={componentRef} />
-		
-		</div>
+		<button onClick={handlePrint}>Download</button>
+		</ContainerPdf>
 	);
 };
 

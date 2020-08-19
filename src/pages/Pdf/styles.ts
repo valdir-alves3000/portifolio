@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const ContainerPdf = styled.div`
+  > button {
+    display: none;
+  }
+`;
 export const Container = styled.div`
   width: 70%;
   margin: 10px auto ;
@@ -9,17 +14,6 @@ export const Container = styled.div`
   padding: 10px 40px;
   color: #353430;
   background: #fff;
-
-  > a {
-    position: fixed;
-    left: 5px;
-    color: #e22240;
-    opacity: .7; 
-
-    &:hover {
-      opacity: 1;
-    }   
-  }
 
   > p {
     padding: 0 20px;
@@ -50,6 +44,15 @@ export const Container = styled.div`
 @media (max-width: 700px) {
   width: 100%;
   box-shadow: none;
+  > a {
+    position: fixed;
+    left: 5px;   
+    opacity: .7; 
+
+    &:hover {
+      opacity: 1;
+    }   
+  }
 }
 `;
 
