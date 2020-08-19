@@ -7,7 +7,7 @@ import { DiHtml5 } from 'react-icons/di';
 import { FaCss3, FaReact } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
 
-import perfilImg from '../../assets/perfilImg.png';
+import perfilImg from '../../assets/perfil.png';
 
 import 
       { 
@@ -16,6 +16,9 @@ import
       } from './styles';
 
 const Home: React.FC = () => {
+  function handleImg() {
+    console.log(perfilImg);
+  }
   return (
     <Container>
       <Header>
@@ -24,7 +27,7 @@ const Home: React.FC = () => {
           <h1>I'm Valdir</h1>
           <p>Estudante de Engenharia da Computação pela UNIVESP (Universidade Virtual do Estado de São Paulo.)</p>
 
-          <Link to="#">HERE ME</Link>
+          <Link to="#" onClick={handleImg}>HERE ME</Link>
         </HeaderContent>
         <img src={perfilImg} alt="" />
       </Header>
