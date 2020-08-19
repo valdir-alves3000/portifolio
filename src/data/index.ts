@@ -2,6 +2,11 @@
 export default [
 
    {
+      empresa: 'Benteler Automotive',
+      cargo: 'Op. Empilhadeira',
+      periodo: '06/2020 - Atual'
+   },
+   {
       empresa: 'Compass Minerals',
       cargo: 'Op. Empilhadeira',
       periodo: '07/2019 - 10/2019'
