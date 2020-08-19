@@ -108,6 +108,7 @@ const Example = () => {
 	return (
 		<div>
 			<ComponentToPrint ref={componentRef} />
+			<button onClick={handlePrint}>Download</button>
 		</div>
 	);
 };
