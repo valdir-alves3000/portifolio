@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ContainerPdf = styled.div`
   > button {
     display: none;
+    visibility: hidden;
   }
 `;
 export const Container = styled.div`
