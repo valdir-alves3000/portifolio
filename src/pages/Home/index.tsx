@@ -37,7 +37,7 @@ const Home: React.FC = () => {
 					onChange={() => {
 						
 					}}
-					checked={'dark'}
+					checked={true}
 					checkedIcon={<IoIosMoon color={'#232423'} style={{ width: 30, height: 30 }} />}
 					uncheckedIcon={<IoIosSunny color={'#fff'} style={{ width: 30, height: 30, marginLeft: 2 }} />}
 					height={30}
