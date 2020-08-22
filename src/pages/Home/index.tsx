@@ -29,12 +29,12 @@ const Home: React.FC = () => {
     console.log(perfilImg);
   }
 
-const [btnChecked, setChecked] = useState(true);
+const [btnChecked, setChecked] = useState(false);
 
   return (
-    <Container>
-      <Header>
-        <HeaderContent>
+    <Container className={btnChecked === true ? 'nigthContainer' : ''}>
+      <Header className={btnChecked === true ? 'nigthHeader' : ''} >
+        <HeaderContent className={btnChecked === true ? 'nigthHeaderContent' : ''}  >
 
 <Switch
 					onChange={() => {
@@ -60,7 +60,7 @@ const [btnChecked, setChecked] = useState(true);
         </HeaderContent>
         <img src={perfilImg} alt="" />
       </Header>
-      <Section>
+      <Section className={btnChecked === true ? 'nigthSection' : ''}  >
         <img src={perfilImg} alt="" />
 
         <ul>
