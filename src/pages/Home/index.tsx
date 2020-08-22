@@ -7,6 +7,9 @@ import { DiHtml5 } from 'react-icons/di';
 import { FaCss3, FaReact } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
 
+import Switch from 'react-switch';
+import { IoIosSunny, IoIosMoon } from 'react-icons/io';
+
 import perfilImg from '../../assets/perfil.png';
 
 import 
@@ -14,6 +17,12 @@ import
         Container, Header, HeaderContent, 
         Section, ImgDoc, Courses, Experience 
       } from './styles';
+
+
+interface Props {
+	
+	toggleTheme(): void;
+}
 
 const Home: React.FC = () => {
   function handleImg() {
@@ -23,6 +32,23 @@ const Home: React.FC = () => {
     <Container>
       <Header>
         <HeaderContent>
+
+<Switch
+					onChange={() => {
+						
+					}}
+					checked={title === 'dark' ? true : false}
+					checkedIcon={<IoIosMoon color={'#232423'} style={{ width: 30, height: 30 }} />}
+					uncheckedIcon={<IoIosSunny color={'#fff'} style={{ width: 30, height: 30, marginLeft: 2 }} />}
+					height={30}
+					width={60}
+					handleDiameter={25}
+					offColor={'#232423'}
+					onHandleColor={'#232423'}
+					offHandleColor={'#fff'}
+					onColor={'#fff'}
+				/>
+
           <p>Hello</p>
           <h1>I'm Valdir</h1>
           <p>Estudante de Engenharia da Computação pela UNIVESP (Universidade Virtual do Estado de São Paulo.)</p>
