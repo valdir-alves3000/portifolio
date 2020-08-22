@@ -28,6 +28,9 @@ const Home: React.FC = () => {
   function handleImg() {
     console.log(perfilImg);
   }
+
+const [btnChecked, setChecked] = useState(true);
+
   return (
     <Container>
       <Header>
@@ -35,9 +38,9 @@ const Home: React.FC = () => {
 
 <Switch
 					onChange={() => {
-						
+						setChecked(prev => !prev);
 					}}
-					checked={true}
+					checked={btnChecked === true ? true : false}
 					checkedIcon={<IoIosMoon color={'#232423'} style={{ width: 30, height: 30 }} />}
 					uncheckedIcon={<IoIosSunny color={'#fff'} style={{ width: 30, height: 30, marginLeft: 2 }} />}
 					height={30}
