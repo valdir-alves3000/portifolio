@@ -16,6 +16,38 @@ export const Container = styled.div`
     --color-text: #220;
 }
 
+.nigthHeaderContent {
+    --color-primary: #f5f5e0;
+    --color-secondary: #ffb633;
+    --color-tertiary: #f9c450;
+    --color-quartenary: #313131;
+    --color-text: #220;
+}
+
+.nigthSection {
+    --color-primary: #f5f5f0;
+    --color-secondary: #ffb633;
+    --color-tertiary: #f9c450;
+    --color-quartenary: #313131;
+    --color-text: #000;
+}
+
+.nigthExperience {
+    --color-primary: #f5f5e0;
+    --color-secondary: #ffb633;
+    --color-tertiary: #f9c450;
+    --color-quartenary: #313131;
+    --color-text: #220;
+}
+
+
+.nigthCourses {
+    --color-primary: #f5f5e0;
+    --color-secondary: #ffb633;
+    --color-tertiary: #f9c450;
+    --color-quartenary: #313131;
+    --color-text: #220;
+}
 
 
 `;
