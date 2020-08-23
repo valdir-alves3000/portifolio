@@ -10,11 +10,12 @@ export const Container = styled.div`
 
 .nigthHeader {
 background: #f0f0f5;
+}
 
-> p {
+ .nigthHeader p {
 color: #333;
 }
-}
+
 
 
 `;
