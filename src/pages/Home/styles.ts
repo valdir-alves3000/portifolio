@@ -9,35 +9,35 @@ export const Container = styled.div`
 
 
 .nigthHeader {
-    --color-primary: #f5f5e0;
+    --color-primary: #f5f5f0;
     --color-secondary: #ffb633;
     --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
-    --color-text: #220;
+    --color-quartenary: #fff;
+    --color-text: #000;
 }
 
 .nigthHeaderContent {
     --color-primary: #f5f5e0;
     --color-secondary: #ffb633;
     --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
-    --color-text: #220;
+    --color-quartenary: #fff;
+    --color-text: #000;
 }
 
 .nigthSection {
     --color-primary: #f5f5f0;
     --color-secondary: #ffb633;
     --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
+    --color-quartenary: #fff;
     --color-text: #000;
 }
 
 .nigthExperience {
-    --color-primary: #f5f5e0;
+    --color-primary: #f5f5f0;
     --color-secondary: #ffb633;
     --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
-    --color-text: #220;
+    --color-quartenary: #fff;
+    --color-text: #000;
 }
 
 
@@ -45,8 +45,8 @@ export const Container = styled.div`
     --color-primary: #f5f5e0;
     --color-secondary: #ffb633;
     --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
-    --color-text: #220;
+    --color-quartenary: #fff;
+    --color-text: #000;
 }
 
 
@@ -188,7 +188,7 @@ export const ImgDoc = styled(FaRegFilePdf)`
 
 export const Courses = styled.section`
 
- background: #222;
+ background: var(--color-quartenary);
  padding: 2.5rem 2.0rem 5.0rem;
 
  > h1 {
