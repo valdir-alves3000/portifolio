@@ -4,71 +4,28 @@ import { FaRegFilePdf } from 'react-icons/fa';
 export const Container = styled.div`
   width: 100%;
   max-width: 1140px;
-  height: 100vh;
-  margin: 0 auto;
-
-
-.nigthHeader {
-    --color-primary: #f5f5f0;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #fff;
-    --color-text: #000;
-}
-
-.nigthHeaderContent {
-    --color-primary: #f5f5e0;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #fff;
-    --color-text: #000;
-}
-
-.nigthSection {
-    --color-primary: #f5f5f0;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #fff;
-    --color-text: #000;
-}
-
-.nigthExperience {
-    --color-primary: #f5f5f0;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #fff;
-    --color-text: #000;
-}
-
-
-.nigthCourses {
-    --color-primary: #f5f5e0;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #fff;
-    --color-text: #000;
-}
-
-
+  margin: 0 auto;  
+  box-shadow:  -1px 2px 2px 2px var(--shadow);
 `;
 
 export const Header = styled.header`
-  width: 100%;
-  height: 25.5rem;  
+  position: relative;
+  width: 100%;   
   padding: 2.5rem 2.0rem 5.0rem;
 
-  background: var(--color-primary);
+  background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  
+   box-shadow:  0 1px rgba(0, 0, 0, 0.2);
 
   > img {
     width: 15.0rem;
     border-radius: .7rem;
     margin-left: .5rem;
   }
+  
 
   @media (max-width: 700px) {
     > img {
@@ -77,10 +34,18 @@ export const Header = styled.header`
   }
 `;
 export const HeaderContent = styled.div`
- max-width: 40.0rem;
+ max-width: 40.0rem; 
+
+ @media (max-width: 700px) { 
+   .icon {
+     position: absolute;
+     left: 90%;
+     top: -20px;
+   }
+ }
 
  > p {
-    color: var(--color-text);
+    color: var(--text);
     opacity: .8;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -92,22 +57,23 @@ export const HeaderContent = styled.div`
   }  
 
   > h1 {
-    color: var(--color-secondary);    
+    color: var(--secondary);    
   }
 
  > a {
    text-decoration: none;
-   color: var(--color-tertiary);
+   color: var(--tertiary);
    padding: .5rem;
    border-radius: .3rem;
-   border: 1px solid var(--color-tertiary);
+   border: 1px solid var(--tertiary);
 
  }
 
 `;
 export const Section = styled.section`
+  box-shadow:  0 -1px var(--shadow);
   width: 100%;
-  background: var(--color-quartenary);
+  background: var(--quartenary);
   overflow: hidden;
 
   display: flex;
@@ -124,13 +90,13 @@ export const Section = styled.section`
    margin-left: 2.0rem;
 
   > h1 {
-    color: var(--color-text);
+    color: var(--text);
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
     padding-left: 2.0rem;
     
     > span {
-      text-shadow: -3px -13px rgba(255, 255, 255, .1);
+      text-shadow: -3px -13px var(--shadow);
     }
   }
 
@@ -143,7 +109,7 @@ export const Section = styled.section`
     padding: .5rem 0;  
 
     > span {
-      color: var(--color-text);
+      color: var(--text);
       font-weight: 0;
     }
 
@@ -155,10 +121,10 @@ export const Section = styled.section`
 
     > a {
       text-decoration: none;
-      color: var(--color-tertiary);
+      color: var(--tertiary);
       padding: .5rem;
       border-radius: .3rem;
-      border: 1px solid var(--color-tertiary);
+      border: 1px solid var(--tertiary);
 
  }
 }
@@ -187,14 +153,15 @@ export const ImgDoc = styled(FaRegFilePdf)`
 `;
 
 export const Courses = styled.section`
-
- background: var(--color-quartenary);
+ box-shadow:  0 -1px var(--shadow);
+ background: var(--primary);
  padding: 2.5rem 2.0rem 5.0rem;
 
  > h1 {
-   color: var(--color-text);
+   color: var(--text);
    text-align: center;
    margin-bottom: 2.0rem;
+   text-shadow: -5px -11px var(--shadow);
  }
 
  > p {
@@ -203,8 +170,8 @@ export const Courses = styled.section`
    text-indent: 1.5rem;
    line-height: 1.5rem;
    transform: translateX(-50%);
-   color: var(--color-text);
-   opacity: .6;
+   color: var(--text);
+   opacity: .8;
    max-width: 35.0rem;
    text-align: justify;
  }
@@ -228,11 +195,12 @@ export const Courses = styled.section`
    > li {
      
     list-style: none;
-    background: var(--color-quartenary);
-    color: var(--color-text);
+    background: var(--quartenary);
+    color: var(--text);
     padding: 2.0rem;
     border-radius: .7rem;
-    text-align: center;     
+    text-align: center;  
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);   
 
      > p {
        margin-top: 1.0rem;
@@ -257,14 +225,15 @@ export const Courses = styled.section`
 
 export const Experience = styled.section`
   
-  background: var(--color-primary);
+  background: var(--quartenary);
   padding: 2.5rem 2.0rem 5.0rem;
+  box-shadow:  0 -1px var(--shadow);
 
   > h1 {
-    color: var(--color-text);
+    color: var(--text);
     text-align: center;
-    font-family: Archivo, cursive;
-
+    font-family: Archivo, cursive;    
+    text-shadow: -5px -11px var(--shadow);
   }
 
   > ul {
@@ -274,29 +243,29 @@ export const Experience = styled.section`
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 1.0rem;
-
+    
    > li {
-      background: var(--color-quartenary);
+      background: var(--primary);
       padding: 2.0rem;
       border-radius: .7rem;
-      
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 
       > h2 {
-        color: var(--color-tertiary);
+        color: var(--tertiary);
         font-size: 1.4rem;
         text-align: center;
         margin-bottom: 1.0rem;
-        opacity: .7;
+        opacity: .8;
       }
 
       > p {
         position: relative;
-        color: var(--color-text);
+        color: var(--text);
         line-height: 2.0rem;
-        opacity: .7;
+        opacity: .8;
 
         > span {
-          opacity: .5;
+          opacity: .7;
           position: absolute;
           left: 5.0rem;
         }

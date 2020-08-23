@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Data from '../../data';
+import Switch from 'react-switch';
 
 import { IoLogoJavascript,IoLogoNodejs } from 'react-icons/io';
 import { DiHtml5 } from 'react-icons/di';
 import { FaCss3, FaReact } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
-
-import Switch from 'react-switch';
 import { IoIosSunny, IoIosMoon } from 'react-icons/io';
 
 import perfilImg from '../../assets/perfil.png';
@@ -18,29 +17,18 @@ import
         Section, ImgDoc, Courses, Experience 
       } from './styles';
 
-
-interface Props {
-	
-	toggleTheme(): void;
-}
-
 const Home: React.FC = () => {
-  function handleImg() {
-    console.log(perfilImg);
-  }
-
-const [btnChecked, setChecked] = useState(true);
+ const [checked, setChecked] = useState(true);
 
   return (
-    <Container className={btnChecked === true ? 'nigthContainer' : ''}>
-      <Header className={btnChecked === true ? 'nigthHeader' : ''} >
-        <HeaderContent className={btnChecked === true ? 'nigthHeaderContent' : ''}  >
-
-<Switch
+    <Container className={!checked ? 'ligth' : '' }>
+      <Header>
+        <HeaderContent>
+        <Switch className="icon"
 					onChange={() => {
 						setChecked(prev => !prev);
 					}}
-					checked={btnChecked === false ? true : false}
+					checked={checked ? true : false}
 					checkedIcon={<IoIosMoon color={'#232423'} style={{ width: 30, height: 30 }} />}
 					uncheckedIcon={<IoIosSunny color={'#fff'} style={{ width: 30, height: 30, marginLeft: 2 }} />}
 					height={30}
@@ -51,16 +39,16 @@ const [btnChecked, setChecked] = useState(true);
 					offHandleColor={'#fff'}
 					onColor={'#fff'}
 				/>
-
+        
           <p>Hello</p>
           <h1>I'm Valdir</h1>
           <p>Estudante de Engenharia da Computação pela UNIVESP (Universidade Virtual do Estado de São Paulo.)</p>
 
-          <Link to="#" onClick={handleImg}>HERE ME</Link>
+          <Link to="" >HERE ME</Link>
         </HeaderContent>
         <img src={perfilImg} alt="" />
       </Header>
-      <Section className={btnChecked === true ? 'nigthSection' : ''}  >
+      <Section>
         <img src={perfilImg} alt="" />
 
         <ul>

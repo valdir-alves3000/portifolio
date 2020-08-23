@@ -16,10 +16,17 @@ export default createGlobalStyle`
   }
 
   :root {
-    --color-primary: #2c2c2c;
-    --color-secondary: #ffb633;
-    --color-tertiary: #f9c450;
-    --color-quartenary: #313131;
-    --color-text: #fff;
+    --primary: #2c2c2c;
+    --secondary: #ffb633;
+    --tertiary: #f9c450;
+    --quartenary: #313131;
+    --text: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    .ligth {
+      --primary: #fff;     
+      --quartenary: #f5f5f5;
+      --text: #000;
+    }
   }
 `;
