@@ -9,11 +9,11 @@ export const Container = styled.div`
 
 
 .nigthHeader {
-background: #f0f0f5;
-}
-
- .nigthHeader p {
-color: #333;
+    --color-primary: #f5f5e0;
+    --color-secondary: #ffb633;
+    --color-tertiary: #f9c450;
+    --color-quartenary: #313131;
+    --color-text: #220;
 }
 
 
