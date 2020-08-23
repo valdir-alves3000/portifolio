@@ -8,8 +8,8 @@ export const Container = styled.div`
   margin: 0 auto;
 
 
-.nigthContainer {
-
+.nigthHeader {
+background: #fff;
 }
 
 
@@ -25,9 +25,6 @@ export const Header = styled.header`
   align-items: center;
   justify-content: center;
 
-.nigthHeader {
-background: #fff;
-}
 
 
   > img {
