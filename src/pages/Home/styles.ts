@@ -6,6 +6,13 @@ export const Container = styled.div`
   max-width: 1140px;
   height: 100vh;
   margin: 0 auto;
+
+
+.nigthContainer {
+
+}
+
+
 `;
 
 export const Header = styled.header`
@@ -17,6 +24,11 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+
+.nigthHeader {
+background: #fff;
+}
+
 
   > img {
     width: 15.0rem;
