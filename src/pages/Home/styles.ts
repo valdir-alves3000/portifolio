@@ -149,7 +149,7 @@ export const Section = styled.section`
 
 export const ImgDoc = styled(FaRegFilePdf)`
   width: 2.0rem;
-  color: #cecece;
+ color: var(--text);
 `;
 
 export const Courses = styled.section`
