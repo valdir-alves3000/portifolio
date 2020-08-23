@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     console.log(perfilImg);
   }
 
-const [btnChecked, setChecked] = useState(false);
+const [btnChecked, setChecked] = useState(true);
 
   return (
     <Container className={btnChecked === true ? 'nigthContainer' : ''}>
@@ -40,7 +40,7 @@ const [btnChecked, setChecked] = useState(false);
 					onChange={() => {
 						setChecked(prev => !prev);
 					}}
-					checked={btnChecked === true ? true : false}
+					checked={btnChecked === false ? true : false}
 					checkedIcon={<IoIosMoon color={'#232423'} style={{ width: 30, height: 30 }} />}
 					uncheckedIcon={<IoIosSunny color={'#fff'} style={{ width: 30, height: 30, marginLeft: 2 }} />}
 					height={30}
