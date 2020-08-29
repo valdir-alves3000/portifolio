@@ -134,7 +134,7 @@ const Home: React.FC = () => {
               return (
 
                   if (index >= ((page - 1)* 3) && index < (page * 3)) {
-                   return (
+                  
 
                 <li>
                   <h2>{item.periodo}</h2>
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
                      </span>
                   </p>
                 </li>
-                );
+                
               }
            );
            }
