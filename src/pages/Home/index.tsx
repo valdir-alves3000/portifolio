@@ -133,10 +133,10 @@ const Home: React.FC = () => {
           {Data.map((item, index) => {
               
                 <li>
-                  <h2>{(index >= ((page - 1)* 3)) , (index < (page * 3)) ? {item.periodo} : ''}</h2>
+                  <h2>{(((index >= ((page - 1)* 3)) && (index < (page * 3))) ? {item.periodo} : ' ')}</h2>
                   <p>Empresa:
                     <span>
-                      {((index >= ((page - 1)* 3)) , (index < (page * 3)) ) ? {item.empresa} : ''}
+                      {(((index >= ((page - 1)* 3)) && (index < (page * 3)) ) ? {item.empresa} : ' ')}
                     </span></p>
                   <p>Cargo: 
                     <span>
