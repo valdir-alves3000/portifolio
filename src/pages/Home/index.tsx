@@ -132,6 +132,10 @@ const Home: React.FC = () => {
         <ul>
           {Data.map((item, index) => {
               return (
+
+                  if (index >= ((page - 1)* 3) && index < (page * 3)) {
+                   return (
+
                 <li>
                   <h2>{item.periodo}</h2>
                   <p>Empresa:
@@ -144,6 +148,8 @@ const Home: React.FC = () => {
                      </span>
                   </p>
                 </li>
+                );
+              }
            );
            }
           )}
