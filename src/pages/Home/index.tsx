@@ -131,6 +131,7 @@ const Home: React.FC = () => {
         <h1>Experience</h1>
         <ul>
           {Data.map((item, index) => {
+           return (
             if (index >= ((page - 1) * 3) && index < (page * 3)) {
 
               return (
@@ -145,6 +146,7 @@ const Home: React.FC = () => {
                 </li>
               );
             }
+            );
           }
           )}
           <li>
