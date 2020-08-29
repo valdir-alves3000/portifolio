@@ -131,7 +131,7 @@ const Home: React.FC = () => {
         <h1>Experience</h1>
         <ul>
           {Data.map((item, index) => {
-              
+              return (
                 <li>
                   <h2>{item.periodo}</h2>
                   <p>Empresa:
@@ -144,6 +144,7 @@ const Home: React.FC = () => {
                      </span>
                   </p>
                 </li>
+)
            }
           )}
           
