@@ -149,7 +149,7 @@ export const Section = styled.section`
 
 export const ImgDoc = styled(FaRegFilePdf)`
   width: 2.0rem;
- color: var(--text);
+  color: var(--text);
 `;
 
 export const Courses = styled.section`
@@ -237,18 +237,43 @@ export const Experience = styled.section`
   }
 
   > ul {
+    position: relative;
     list-style: none;
     margin: 2.0rem 0;
 
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 1.0rem;
-    
+
    > li {
       background: var(--primary);
       padding: 2.0rem;
       border-radius: .7rem;
       box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+
+      &:last-child {
+        position: absolute;
+        width: 100%;
+        background: none;
+        box-shadow: none;
+        bottom: -7.0rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        > span {
+
+          &:hover{
+            cursor: pointer;
+          }
+
+          > svg {
+            color: var(--text);
+            font-size: 3.0rem;
+            opacity: 0.8;
+          }
+        }
+      }
 
       > h2 {
         color: var(--tertiary);
@@ -272,7 +297,7 @@ export const Experience = styled.section`
       }
     }
   }
-
+  
   @media (max-width: 940px) {
    
     > ul {
