@@ -133,7 +133,7 @@ const Home: React.FC = () => {
           {Data.map((item, index) => {
               return (
 
-                  if (index >= ((page - 1)* 3) && index < (page * 3)) {
+                  if (index >= ((page - 1)* 3)) {
                   
 
                 <li>
