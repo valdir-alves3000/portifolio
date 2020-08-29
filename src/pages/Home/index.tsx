@@ -134,7 +134,7 @@ const Home: React.FC = () => {
            
             if (index >= ((page - 1) * 3) && index < (page * 3)) {
 
-              return (
+              array-callback-return (
                 <li>
                   <h2>{item.periodo}</h2>
                   <p>Empresa: <span>{item.empresa}</span></p>
