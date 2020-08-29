@@ -131,11 +131,7 @@ const Home: React.FC = () => {
         <h1>Experience</h1>
         <ul>
           {Data.map((item, index) => {
-              return (
-
-                  if (index >== ((page - 1)* 3)) {
-                  
-
+              
                 <li>
                   <h2>{item.periodo}</h2>
                   <p>Empresa:
@@ -148,16 +144,9 @@ const Home: React.FC = () => {
                      </span>
                   </p>
                 </li>
-                
-              }
-           );
            }
           )}
-          <li>
-            <span onClick={handlePrev}><BsChevronCompactLeft /></span>
-            <span onClick={handleNext}><BsChevronCompactRight /></span>
-          </li>
-
+          
         </ul>
       </Experience>
 
