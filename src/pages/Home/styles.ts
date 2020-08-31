@@ -35,6 +35,10 @@ export const Header = styled.header`
 `;
 export const HeaderContent = styled.div`
  max-width: 40.0rem; 
+ .icon {
+   position: relative;
+   top: -3.0rem;
+ }
 
  @media (max-width: 700px) { 
    .icon {
@@ -261,6 +265,10 @@ export const Experience = styled.section`
         align-items: center;
         justify-content: space-evenly;
 
+        > p {
+          opacity: .3;          
+        }
+
         > span {
 
           &:hover{
@@ -270,7 +278,7 @@ export const Experience = styled.section`
           > svg {
             color: var(--text);
             font-size: 3.0rem;
-            opacity: 0.8;
+            opacity: 0.5;
           }
         }
       }
@@ -313,6 +321,6 @@ export const Experience = styled.section`
         position: relative;
         left: 1.0rem;
       } 
-    }
-  }
+    }  
+  }   
 `;

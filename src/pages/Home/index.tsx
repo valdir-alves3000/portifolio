@@ -131,27 +131,32 @@ const Home: React.FC = () => {
         <h1>Experience</h1>
         <ul>
           {Data.map((item, index) => {
+            if (index >= ((page - 1) * 3) && index < (page * 3)) {
+
               return (
                 <li>
                   <h2>{item.periodo}</h2>
-                  <p>Empresa:
-                    <span>
-                      {item.empresa}
-                    </span></p>
+                  <p>Empresa: <span>{item.empresa}</span></p>
                   <p>Cargo: 
                     <span>
                      {item.cargo}
                      </span>
                   </p>
                 </li>
-)
-           }
+              );
+            }
+          }
           )}
-          
+          <li>
+            <span onClick={handlePrev}><BsChevronCompactLeft /></span>
+            <p>Page:  {page}</p>
+            <span onClick={handleNext}><BsChevronCompactRight /></span>
+          </li>
+
         </ul>
       </Experience>
 
-    </Container>
+    </Container> 
   );
 }
 
